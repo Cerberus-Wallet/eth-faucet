@@ -31,3 +31,4 @@ COPY --from=backend /backend-build/eth-faucet /app/eth-faucet
 EXPOSE 8080
 
 ENTRYPOINT ["/app/eth-faucet"]
+CMD ["-httpport", "8080", "-proxycount", "0", "-faucet.amount", "1", "-faucet.minutes", "1440", "-faucet.name", "testnet", "-faucet.symbol", "ETH", "-hcaptcha.sitekey", "", "-hcaptcha.secret", ""]

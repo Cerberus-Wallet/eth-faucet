@@ -105,3 +105,6 @@ docker run -d -p 8080:8080 -e WEB3_PROVIDER=rpc endpoint -e KEYSTORE=keystore pa
 ## License
 
 Distributed under the MIT License. See LICENSE for more information.
+
+
+docker run -p 8080:8080 -e WEB3_PROVIDER=rpc endpoint -e PRIVATE_KEY=hex private key eth-faucet:v1 -faucet.symbol CRB -faucet.name Cerberus -faucet.amount 20
